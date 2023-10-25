@@ -500,6 +500,11 @@ func (stmt *Stmt) makeDefines() ([]defineStruct, error) {
 			freeDefines(defines)
 			return nil, err
 		}
+		// OceanBase Oracle returns 0 for maxSize for some types, so we set a default value of 4000
+		// to avoid error ORA-01406: fetched column value was truncated.
+		if maxSize == 0 {
+			maxSize = 4000
+		}
 
 		defines[i].length = (*C.ub2)(C.malloc(C.sizeof_ub2))
 		*defines[i].length = 0
