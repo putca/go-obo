@@ -1,8 +1,10 @@
 package oci8
 
 /*
-#cgo CFLAGS: -I${SRCDIR}/x86_64/include
-#cgo LDFLAGS: ${SRCDIR}/x86_64/lib/libobci.a -lstdc++ -lpthread -ldl -lm
+#cgo (amd64) CFLAGS: -I${SRCDIR}/x86_64/include
+#cgo (amd64) LDFLAGS: ${SRCDIR}/x86_64/lib/libobci.a -lstdc++ -lpthread -ldl -lm
+#cgo (arm64) CFLAGS: -I${SRCDIR}/arm64/include
+#cgo (arm64) LDFLAGS: ${SRCDIR}/arm64/lib/libobci.a -lstdc++ -lpthread -ldl -lm
 #include "oci8.go.h"
 */
 import "C"
