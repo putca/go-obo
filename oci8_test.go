@@ -14,7 +14,7 @@ import (
 )
 
 // to run database tests
-// go test -v github.com/mattn/go-oci8 -args -disableDatabase=false -hostValid type_hostname_here -username type_username_here -password "type_password_here"
+// go test -v github.com/putca/go-obo -args -disableDatabase=false -hostValid type_hostname_here -username type_username_here -password "type_password_here"
 // look at test.sh for Oracle user setup example
 
 var (

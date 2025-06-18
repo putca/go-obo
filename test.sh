@@ -20,10 +20,10 @@ test_go_dist () {
     export PATH=/usr/local/go${VERSION_MAJOR_MINOR}.x/bin:${PATH_SAVE}
     export GOROOT=/usr/local/go${VERSION_MAJOR_MINOR}.x
     export GOPATH=/usr/local/goFiles${VERSION_MAJOR_MINOR}.x
-    mkdir -p ${GOPATH}/src/github.com/mattn/go-oci8
-    cp -r ${TESTDIR}/* ${GOPATH}/src/github.com/mattn/go-oci8/
+    mkdir -p ${GOPATH}/src/github.com/putca/go-obo
+    cp -r ${TESTDIR}/* ${GOPATH}/src/github.com/putca/go-obo/
 
-    go test -v github.com/mattn/go-oci8 -args -disableDatabase=false -hostValid ${DOCKER_IP} -username scott -password tiger
+    go test -v github.com/putca/go-obo -args -disableDatabase=false -hostValid ${DOCKER_IP} -username scott -password tiger
 }
 
 echo "installing build tools"

@@ -1,8 +1,8 @@
 # go-oci8
 
-[![GoDoc Reference](https://godoc.org/github.com/mattn/go-oci8?status.svg)](http://godoc.org/github.com/mattn/go-oci8)
+[![GoDoc Reference](https://godoc.org/github.com/putca/go-obo?status.svg)](http://godoc.org/github.com/putca/go-obo)
 [![Build Status](https://travis-ci.org/mattn/go-oci8.svg?branch=master)](https://travis-ci.org/mattn/go-oci8)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mattn/go-oci8)](https://goreportcard.com/report/github.com/mattn/go-oci8)
+[![Go Report Card](https://goreportcard.com/badge/github.com/putca/go-obo)](https://goreportcard.com/report/github.com/putca/go-obo)
 
 
 ## Description
@@ -23,12 +23,12 @@ Install pkg-config, edit your package config file oci8.pc (examples below), then
 Go get with Go version 1.9 or higher
 
 ```
-go get github.com/mattn/go-oci8
+go get github.com/putca/go-obo
 ```
 
 Try the simple select example:
 
-https://godoc.org/github.com/mattn/go-oci8#example-package--SqlSelect
+https://godoc.org/github.com/putca/go-obo#example-package--SqlSelect
 
 If you have a build error it is normaly because of a misconfiguration, make sure to search close issues for help
 
@@ -104,11 +104,11 @@ export PKG_CONFIG_PATH=/Users/<username>/Downloads/instantclient_12_2
 
 SQL examples can be found in the GoDoc reference:
 
-https://godoc.org/github.com/mattn/go-oci8
+https://godoc.org/github.com/putca/go-obo
 
 And in _example:
 
-https://github.com/mattn/go-oci8/tree/master/_example
+https://github.com/putca/go-obo/tree/master/_example
 
 ## Author
 

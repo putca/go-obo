@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	_ "github.com/mattn/go-oci8"
+	_ "github.com/putca/go-obo"
 )
 
 func main() {

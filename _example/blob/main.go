@@ -3,9 +3,10 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/mattn/go-oci8"
 	"os"
 	"strings"
+
+	_ "github.com/putca/go-obo"
 )
 
 func getDSN() string {

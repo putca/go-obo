@@ -1,3 +1,4 @@
+//go:build go1.12
 // +build go1.12
 
 package oci8_test
@@ -10,7 +11,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/mattn/go-oci8"
+	oci8 "github.com/putca/go-obo"
 )
 
 func Example_sqlCursor() {
